@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cm1
+data:
+  player_init: "3"
+  properties: "user"
+  

@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myapp
+spec:
+  restartPolicy: Never
+  containers:
+  - name: mycont
+    image: alpine
+    command: [ 'sh', '-c', 'sleep 20']
