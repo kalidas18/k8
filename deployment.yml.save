@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sampledeployment
+spec:
+  selector:
+    matchLabels:
+      app: sample1
+  template:
+    metadata:
+      labels:
+        app: sample1
+    spec:
+      - name: nginx
+        image: nginx
+        ports:
+          - containerPort: 80
+          command:
+            - /bin/sh
+            args:
+              - '-c'
+              - echo hellowwww
+              
